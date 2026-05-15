@@ -18,7 +18,7 @@
 
 ---
 
-## 🎬 Demo
+## Demo
 
 [![Watch ResumeAI Demo](https://img.youtube.com/vi/1qAAj-6JkPA/maxresdefault.jpg)](https://youtu.be/1qAAj-6JkPA)
 
@@ -26,37 +26,37 @@
 
 ---
 
-## 📖 About
+## About
 **ResumeAI** is a cutting-edge web application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It bridges the gap between raw PDF resumes and intelligent, actionable career feedback.
 
-Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **Glassmorphism UI supporting both Dark 🌙 and Light ☀️ Mode**, ResumeAI delivers deep, context-aware resume analysis with a premium user experience.
+Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **Glassmorphism UI supporting both Dark and Light Mode**, ResumeAI delivers deep, context-aware resume analysis with a premium user experience.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 🧠 Intelligent ATS Analysis
+### Intelligent ATS Analysis
 - **Smart Parsing** — Extracts raw text from PDF resumes using `smalot/pdfparser`
 - **Role-Based Analysis** — Analyzes resume against specific job roles (e.g., Data Scientist, Web Developer)
 - **Comprehensive Feedback** — Returns ATS Score (0–100), matched skills, missing skills, and Resume Strength rating
 
-### 🛡️ Secure User Ecosystem
+### Secure User Ecosystem
 - **Session Management** — Secure login/registration with hashed passwords and anti-CSRF tokens
 - **Smart Routing** — Cookie tracking redirects returning users to dashboard automatically
 - **Email System** — SMTP-driven emails via PHPMailer for account verification
 
-### 📊 Interactive Dashboard & History
+### Interactive Dashboard & History
 - **Analytics Dashboard** — Real-time metrics: total resumes analyzed, average ATS score
 - **History Tracker** — View past analyses, re-read AI feedback, or delete old records
 - **Polished UI** — Auto-fading alerts, drag-and-drop file upload with strict validation
 
-### 🔒 Privacy-First Architecture
+### Privacy-First Architecture
 - **Auto-Destruction** — Uploaded PDFs are permanently deleted the moment text extraction completes (`unlink()`)
 - **Zero-Footprint** — No resume files ever stored on server post-analysis
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -70,7 +70,7 @@ Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **G
 
 ---
 
-## 🔒 Security
+## Security
 
 - **Zero-Footprint Storage** — PDFs wiped immediately post-analysis
 - **Bcrypt Encryption** — `password_hash()` for all user passwords
@@ -79,7 +79,7 @@ Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **G
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Prerequisites
 - **XAMPP / WAMP** — PHP + MySQL server environment
@@ -124,7 +124,7 @@ SMTP_PASS   = "your_smtp_app_password"
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ResumeAI/
@@ -144,7 +144,7 @@ ResumeAI/
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 ```
 Upload PDF → Extract Text → Send to Groq AI → Parse Response → Show ATS Score + Feedback → Delete PDF
