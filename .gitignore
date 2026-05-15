@@ -2,6 +2,8 @@
 # Dependency Directories
 # ========================
 vendor/
+composer.lock
+composer.phar
 
 # ========================
 # Uploaded Resumes
@@ -9,6 +11,15 @@ vendor/
 # ========================
 uploads/*
 !uploads/.gitkeep
+
+# ========================
+# Uploaded File Types
+# (Extra safety net)
+# ========================
+uploads/*.pdf
+uploads/*.docx
+uploads/*.doc
+uploads/*.txt
 
 # ========================
 # Sensitive Configuration
@@ -19,13 +30,10 @@ includes/config.php
 .env.production
 
 # ========================
-# Uploaded File Types
-# (Extra safety net)
+# Test Files
+# (Never expose API keys in tests)
 # ========================
-uploads/*.pdf
-uploads/*.docx
-uploads/*.doc
-uploads/*.txt
+tests/
 
 # ========================
 # PHP Logs & Errors
@@ -50,8 +58,3 @@ desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
-
-# ========================
-# Composer
-# ========================
-composer.phar

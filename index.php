@@ -61,10 +61,6 @@ if ($isLoggedIn) {
       <div style="display: flex; gap: 16px; justify-content: center; margin-top: 32px;">
         <a href="<?= htmlspecialchars($getStartedHref) ?>" class="btn btn-primary btn-lg"><?= htmlspecialchars($getStartedText) ?></a>
         <a href="#how-it-works" class="btn btn-outline btn-lg" style="display: flex; align-items: center; gap: 8px;">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
           How to Use
         </a>
       </div>
@@ -142,7 +138,7 @@ if ($isLoggedIn) {
         </a>
         <p>Optimize your resume and accelerate your career with our industry-leading AI analysis tools.</p>
         <div style="margin-top: 20px;">
-          <a href="mailto:bokdeaditya77@gmail.com" class="btn btn-footer-email" style="display: inline-flex; align-items: center; gap: 8px;">
+          <a href="mailto:your_mail@gmail.com" class="btn btn-footer-email" style="display: inline-flex; align-items: center; gap: 8px;">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
