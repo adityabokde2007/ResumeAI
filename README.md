@@ -191,5 +191,5 @@ Upload PDF → Extract Text → Send to Groq AI → Parse Response → Show ATS 
 <p align="center">
   <i>Architected & Developed with ❤️ by <a href="https://github.com/adityabokde2007">Aditya Bokde</a></i>
   <br/>
-  🌟 Star this repo if ResumeAI helped you land your dream job!
+  🌟 Star this repo if ResumeAI helped you!
 </p>
