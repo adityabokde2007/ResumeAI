@@ -27,10 +27,9 @@
 ---
 
 ## 📖 About
-
 **ResumeAI** is a cutting-edge web application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It bridges the gap between raw PDF resumes and intelligent, actionable career feedback.
 
-Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **Glassmorphism Dark Mode UI**, ResumeAI delivers deep, context-aware resume analysis with a premium user experience.
+Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **Glassmorphism UI supporting both Dark 🌙 and Light ☀️ Mode**, ResumeAI delivers deep, context-aware resume analysis with a premium user experience.
 
 ---
 
