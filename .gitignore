@@ -1,0 +1,57 @@
+# ========================
+# Dependency Directories
+# ========================
+vendor/
+
+# ========================
+# Uploaded Resumes
+# (Keep folder, ignore files inside)
+# ========================
+uploads/*
+!uploads/.gitkeep
+
+# ========================
+# Sensitive Configuration
+# ========================
+includes/config.php
+.env
+.env.local
+.env.production
+
+# ========================
+# Uploaded File Types
+# (Extra safety net)
+# ========================
+uploads/*.pdf
+uploads/*.docx
+uploads/*.doc
+uploads/*.txt
+
+# ========================
+# PHP Logs & Errors
+# ========================
+*.log
+error_log
+php_errors.log
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ========================
+# IDE & Editor Files
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# Composer
+# ========================
+composer.phar
