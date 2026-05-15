@@ -13,13 +13,6 @@
   <img src="https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge&logo=groq&logoColor=white" alt="Groq" />
 </p>
 
-<p>
-  <img src="https://img.shields.io/github/stars/adityabokde2007/ResumeAI?style=flat-square&color=yellow" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/adityabokde2007/ResumeAI?style=flat-square&color=blue" alt="Forks" />
-  <img src="https://img.shields.io/github/last-commit/adityabokde2007/ResumeAI?style=flat-square&color=green" alt="Last Commit" />
-  <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="License" />
-</p>
-
 </div>
 
 ---
