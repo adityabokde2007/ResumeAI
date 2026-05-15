@@ -1,123 +1,195 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png" width="100" alt="PHP Logo">
 
-  <h1>📄 ResumeAI</h1>
-  <p><strong>Next-Generation AI-Powered ATS Resume Analyzer</strong></p>
+# 📄 ResumeAI
 
-  <p>
-    <a href="https://php.net"><img src="https://img.shields.io/badge/Language-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /></a>
-    <a href="https://mysql.com"><img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" /></a>
-    <a href="https://groq.com"><img src="https://img.shields.io/badge/AI_Engine-Groq_API-F55036?style=for-the-badge&logo=artificial-intelligence&logoColor=white" alt="Groq" /></a>
-  </p>
+### Next-Generation AI-Powered ATS Resume Analyzer
+
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/PHP_8+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge&logo=groq&logoColor=white" alt="Groq" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/github/stars/adityabokde2007/ResumeAI?style=flat-square&color=yellow" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/adityabokde2007/ResumeAI?style=flat-square&color=blue" alt="Forks" />
+  <img src="https://img.shields.io/github/last-commit/adityabokde2007/ResumeAI?style=flat-square&color=green" alt="Last Commit" />
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="License" />
+</p>
+
 </div>
 
 ---
 
-## 📖 About ResumeAI
-**ResumeAI** is a cutting-edge web application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). Developed as a comprehensive portfolio project, it bridges the gap between raw PDF resumes and intelligent, actionable career feedback. 
+## 🎬 Demo
 
-Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a stunning **glassmorphism Dark Mode UI**, ResumeAI guarantees deep, context-aware resume analysis while delivering a premium, seamless user experience.
+[![Watch ResumeAI Demo](https://img.youtube.com/vi/1qAAj-6JkPA/maxresdefault.jpg)](https://youtu.be/1qAAj-6JkPA)
 
----
-
-## 🌟 Key Features & Workflow
-
-ResumeAI employs advanced text extraction and AI prompting to deliver highly accurate resume feedback:
-
-### 🧠 1. Intelligent ATS Analysis
-The core engine of the platform, handling the complex PDF-to-AI pipeline.
-- **Smart Parsing:** Extracts raw text from uploaded PDF resumes using the robust `smalot/pdfparser`.
-- **Role-Based Analysis:** Analyzes the extracted text against specific job roles (e.g., Data Scientist, Web Developer).
-- **Comprehensive Feedback:** Returns an accurate ATS Score (0-100), matched skills, missing skills, and a calculated "Resume Strength" rating.
-
-### 🛡️ 2. Secure User Ecosystem
-A fully robust authentication and tracking system.
-- **Session Management:** Secure login and registration with hashed passwords and anti-CSRF tokens.
-- **Smart Routing:** Persistent cookie tracking intelligently redirects returning users to their dashboard or the login screen.
-- **Communication:** SMTP-driven email logic via PHPMailer for potential account verification.
-
-### 📊 3. Interactive Dashboard & History
-Empowering users with their personal data.
-- **Analytics Dashboard:** Real-time metrics showing total resumes analyzed and average ATS score.
-- **History Tracker:** A dedicated module to view past analyses, re-read AI feedback, or delete old records.
-- **Polished UI Interactions:** 5-second auto-fading success/error alerts and strictly validated drag-and-drop file inputs.
-
-### 🔒 4. Privacy-First Architecture
-Ensuring absolute data protection for user documents.
-- **Auto-Destruction Protocol:** Uploaded PDF files are permanently and automatically deleted (`unlink()`) from the server the exact millisecond the text extraction is complete.
+> Click the thumbnail above to watch the full demo
 
 ---
 
-## 🛠️ Technical Architecture & Stack
+## 📖 About
 
-### Frontend Application
-- **Language:** HTML5, Vanilla JavaScript, CSS3
-- **UI/UX:** Custom Glassmorphism Aesthetics, Deep Dark Mode, CSS Variables System.
-- **Animations:** Fluid CSS transitions, hover effects, and custom loading spinners.
-- **Validation:** Strict client-side file type and concurrent-upload prevention.
+**ResumeAI** is a cutting-edge web application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It bridges the gap between raw PDF resumes and intelligent, actionable career feedback.
 
-### Backend Infrastructure
-- **Core:** Core PHP 8+ (Procedural & Object-Oriented blend)
-- **Database:** MySQL relational database utilizing Prepared Statements.
-- **AI Integration:** PHP cURL requests to the Groq LLM API.
-- **Dependencies:** Managed via Composer.
+Powered by the lightning-fast **Groq API (Llama 3.1)** and engineered with a **Glassmorphism Dark Mode UI**, ResumeAI delivers deep, context-aware resume analysis with a premium user experience.
 
 ---
 
-## 🔒 Security Posture
-Data integrity and privacy are paramount in ResumeAI:
-- **Zero-Footprint Storage:** Server completely wipes PDF files post-analysis to prevent data hoarding.
-- **Encrypted Credentials:** `password_hash()` (Bcrypt) ensures all user passwords are mathematically secure.
-- **CSRF Protection:** Cryptographically secure CSRF tokens generated per session to prevent cross-site request forgery.
-- **Prepared Statements:** All database queries utilize strict bound parameters to neutralize SQL injection vulnerabilities.
+## 🌟 Key Features
+
+### 🧠 Intelligent ATS Analysis
+- **Smart Parsing** — Extracts raw text from PDF resumes using `smalot/pdfparser`
+- **Role-Based Analysis** — Analyzes resume against specific job roles (e.g., Data Scientist, Web Developer)
+- **Comprehensive Feedback** — Returns ATS Score (0–100), matched skills, missing skills, and Resume Strength rating
+
+### 🛡️ Secure User Ecosystem
+- **Session Management** — Secure login/registration with hashed passwords and anti-CSRF tokens
+- **Smart Routing** — Cookie tracking redirects returning users to dashboard automatically
+- **Email System** — SMTP-driven emails via PHPMailer for account verification
+
+### 📊 Interactive Dashboard & History
+- **Analytics Dashboard** — Real-time metrics: total resumes analyzed, average ATS score
+- **History Tracker** — View past analyses, re-read AI feedback, or delete old records
+- **Polished UI** — Auto-fading alerts, drag-and-drop file upload with strict validation
+
+### 🔒 Privacy-First Architecture
+- **Auto-Destruction** — Uploaded PDFs are permanently deleted the moment text extraction completes (`unlink()`)
+- **Zero-Footprint** — No resume files ever stored on server post-analysis
 
 ---
 
-## ⚙️ Installation & Setup Guide
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | HTML5, CSS3, Vanilla JavaScript (ES6+) |
+| Backend | PHP 8+ (Procedural + OOP) |
+| Database | MySQL with Prepared Statements |
+| AI Engine | Groq API — Llama 3.1 |
+| PDF Parsing | smalot/pdfparser (via Composer) |
+| Email | PHPMailer (SMTP) |
+| UI Style | Glassmorphism, Dark Mode, CSS Variables |
+
+---
+
+## 🔒 Security
+
+- **Zero-Footprint Storage** — PDFs wiped immediately post-analysis
+- **Bcrypt Encryption** — `password_hash()` for all user passwords
+- **CSRF Protection** — Cryptographically secure tokens per session
+- **SQL Injection Prevention** — All queries use strict prepared statements
+
+---
+
+## ⚙️ Installation
 
 ### Prerequisites
-- **XAMPP/WAMP:** Or any standard PHP/MySQL server environment.
-- **Composer:** PHP dependency manager.
-- **Groq Account:** A free API key from Groq Cloud.
+- **XAMPP / WAMP** — PHP + MySQL server environment
+- **Composer** — PHP dependency manager
+- **Groq API Key** — Free key from [Groq Cloud](https://console.groq.com)
 
-### Build Instructions
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/ResumeAI.git
-   ```
-2. **Install Dependencies:**
-   Navigate to the project root and run:
-   ```bash
-   composer install
-   ```
-3. **Database Configuration:**
-   - Create a MySQL database named `ai_resume_analyzer`.
-   - Import the structural schema found in `database/schema.sql`.
-4. **Environment Setup:**
-   - Rename `includes/config.example.php` to `includes/config.php`.
-   - Open `config.php` and insert your Database Credentials, SMTP App Password, and Groq API Key.
-5. **Run the App:**
-   - Start your Apache and MySQL servers in XAMPP.
-   - Visit `http://localhost/ResumeAI` in your browser.
+### Setup Steps
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/adityabokde2007/ResumeAI.git
+cd ResumeAI
+```
+
+**2. Install dependencies**
+```bash
+composer install
+```
+
+**3. Set up the database**
+- Create a MySQL database named `ai_resume_analyzer`
+- Import the schema:
+```bash
+mysql -u root -p ai_resume_analyzer < database/schema.sql
+```
+
+**4. Configure environment**
+- Rename `includes/config.example.php` → `includes/config.php`
+- Fill in your credentials:
+```php
+DB_HOST     = "localhost"
+DB_NAME     = "ai_resume_analyzer"
+DB_USER     = "root"
+DB_PASS     = "your_password"
+GROQ_API_KEY = "your_groq_api_key"
+SMTP_PASS   = "your_smtp_app_password"
+```
+
+**5. Run the app**
+- Start Apache + MySQL in XAMPP
+- Visit: `http://localhost/ResumeAI`
 
 ---
 
-## 📂 Codebase Anatomy
-```text
+## 📂 Project Structure
+
+```
 ResumeAI/
-├── assets/              # CSS, JavaScript, and static images
-├── auth/                # Login, registration, and logout logic
-├── database/            # MySQL schema and migration scripts
-├── includes/            # Global configs, mailer logic, and sidebars
-├── tests/               # API, Regex, and Database unit testing scripts
-├── user/                # Core AI analysis, upload logic, and dashboard
-├── vendor/              # Composer dependencies (Smalot PDF)
-├── index.php            # Dynamic landing page & Auth router
-└── composer.json        # Project dependency definitions
+├── assets/
+│   ├── css/            # Stylesheets
+│   ├── js/             # JavaScript files
+│   └── images/         # Static images & logo
+├── auth/               # Login, register, logout
+├── database/           # MySQL schema & migrations
+├── includes/           # Config, mailer, sidebar
+├── tests/              # API, regex & DB test scripts
+├── user/               # Dashboard, upload, analysis, history
+├── vendor/             # Composer dependencies
+├── index.php           # Landing page & auth router
+└── composer.json       # Dependency definitions
 ```
 
 ---
 
+## 🚀 How It Works
+
+```
+Upload PDF → Extract Text → Send to Groq AI → Parse Response → Show ATS Score + Feedback → Delete PDF
+```
+
+1. User uploads resume (PDF)
+2. `smalot/pdfparser` extracts raw text
+3. Text + job role sent to Groq (Llama 3.1) via cURL
+4. AI returns structured JSON with score, skills, suggestions
+5. Results saved to MySQL & displayed on dashboard
+6. PDF immediately deleted from server
+
+---
+
+## 📬 Contact
+
 <p align="center">
-  <i>Architected & Developed with ❤️ for the future of AI recruitment.</i>
+  <a href="mailto:adityabokde2007@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/adityabokde2007">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/adityabokde">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/adityabokde">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <i>Architected & Developed with ❤️ by <a href="https://github.com/adityabokde2007">Aditya Bokde</a></i>
+  <br/>
+  🌟 Star this repo if ResumeAI helped you land your dream job!
 </p>
